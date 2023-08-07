@@ -34,7 +34,7 @@
       "KC_LSFT",
       "KC_A",
       "KC_S",
-      "KC_D",
+      "ANY(MT(MOD_LSFT, KC_D))",
       "KC_F",
       "KC_G",
       "KC_H",
