@@ -35,7 +35,7 @@
       "KC_A",
       "KC_S",
       "LSFT_T(KC_D)",
-      "KC_F",
+      "LT(2,KC_F)",
       "KC_G",
       "KC_H",
       "KC_J",
@@ -57,11 +57,11 @@
       "KC_RBRC",
       "KC_LGUI",
       "LSFT_T(KC_SPC)",
-      "LT(2,KC_CAPS)",
+      "LT(2,KC_BSPC)",
       "LT(1,KC_SPC)",
       "KC_ENT",
       "KC_LALT",
-      "KC_BSPC",
+      "KC_CAPS",
       "KC_DEL"
     ],
     [
