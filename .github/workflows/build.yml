@@ -33,7 +33,7 @@ jobs:
       run: qmk clean
 
     - name: git config
-      run: git config --global --add safe.directory /__w/qmk_keymap_5x6/qmk_keymap_5x6
+      run: git config --global --add safe.directory /__w/qmk_charybdis_4x6/qmk_charybdis_4x6
       
     - name: make git-submodule
       run: make git-submodule
