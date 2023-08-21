@@ -30,3 +30,6 @@ After commit, github action will build archive with firmware for you.
 - Copy firmware to it
 - Done
 
+## Keymap
+
+![Keymap](keymap.png)
