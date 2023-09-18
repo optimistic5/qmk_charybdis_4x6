@@ -34,6 +34,8 @@ void matrix_scan_user(void) {
 #    endif // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #endif     // POINTING_DEVICE_ENABLE
 
+// Send d when pressed, send DRGSCRL (scroll mode for trackball) when hold
+// Put LT(0,KC_D) in keymap.json
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LT(0, KC_D):
