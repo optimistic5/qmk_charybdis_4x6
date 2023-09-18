@@ -34,4 +34,14 @@ void matrix_scan_user(void) {
 #    endif // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #endif     // POINTING_DEVICE_ENABLE
 
-
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(0, KC_D):
+            if (!record->tap.count) {
+                charybdis_set_pointer_dragscroll_enabled(record->event.pressed);
+                return false;
+            }
+            return true;
+    }
+    return true;
+}
