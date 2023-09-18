@@ -44,14 +44,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;
-    }
-    return true;
-}
-
-// Send k when pressed, send DRGSCRL (scroll mode for trackball) when hold
-// Put LT(0,KC_K) in keymap.json
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
         case LT(0, KC_K):
             if (!record->tap.count) {
                 charybdis_set_pointer_dragscroll_enabled(record->event.pressed);
