@@ -55,7 +55,7 @@
       "KC_DOT",
       "LT(3,KC_SLSH)",
       "KC_BSLS",
-      "KC_LGUI",
+      "MT(MOD_RGUI, KC_CAPS)",
       "LSFT_T(KC_SPC)",
       "LT(1,KC_BSPC)",
       "LT(1,KC_ESC)",
