@@ -44,6 +44,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;
+        case LT(0, KC_K):
+            if (!record->tap.count) {
+                charybdis_set_pointer_dragscroll_enabled(record->event.pressed);
+                return false;
+            }
+            return true;
     }
     return true;
 }
