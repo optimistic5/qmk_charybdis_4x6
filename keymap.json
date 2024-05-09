@@ -165,8 +165,8 @@
       "KC_END",
       "KC_NO",
       "KC_NO",
-      "QK_BOOT",
-      "EE_CLR",
+      "KC_NO",
+      "KC_NO",
       "KC_NO",
       "KC_NO",
       "KC_NO",
@@ -183,15 +183,15 @@
     [
       "KC_NO",
       "EE_CLR",
+      "QK_BOOT",
       "KC_NO",
       "KC_NO",
       "KC_NO",
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
-      "KC_NO",
-      "KC_NO",
+      "QK_BOOT",
+      "EE_CLR",
       "KC_NO",
       "KC_NO",
       "KC_NO",
@@ -239,5 +239,5 @@
       "KC_BTN3"
     ]
   ],
-  "author": "Аноним"
+  "author": "optimistic5"
 }
