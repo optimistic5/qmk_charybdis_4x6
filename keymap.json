@@ -41,7 +41,7 @@
       "KC_J",
       "LT(3,KC_K)",
       "LT(0,KC_L)",
-      "KC_SCLN",
+      "RALT(KC_SCLN)",
       "KC_QUOT",
       "KC_LCTL",
       "KC_Z",
@@ -59,7 +59,7 @@
       "LSFT_T(KC_SPC)",
       "LT(1,KC_BSPC)",
       "LT(1,KC_ESC)",
-      "RALT(KC_ENT)",
+      "KC_ENT",
       "KC_LALT",
       "LT(2,KC_NO)",
       "LT(2,KC_DEL)"
