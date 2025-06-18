@@ -61,7 +61,7 @@
       "LT(1,KC_ESC)",
       "KC_ENT",
       "KC_LALT",
-      "LT(2,KC_NO)",
+      "KC_RALT",
       "LT(2,KC_DEL)"
     ],
     [
