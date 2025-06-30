@@ -3,6 +3,17 @@
 
 #define PT_SLSH LT(TG(3), KC_SLSH)
 
+// Combo definitions
+enum combos {
+    RT_LPRN,
+};
+
+const uint16_t PROGMEM rt_combo[] = {KC_R, KC_T, COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+    [RT_LPRN] = COMBO(rt_combo, KC_LPRN),
+};
+
 
 #ifdef CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #    include "timer.h"
