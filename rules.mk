@@ -1,4 +1,4 @@
-SRC +=  source.c
+SRC +=  source.c combos.c
 
 # RP2040-specific options
 ALLOW_WARNINGS = yes
