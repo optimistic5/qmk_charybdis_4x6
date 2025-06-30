@@ -55,15 +55,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
-#ifdef COMBO_ENABLE
-enum combos {
-    RT_LPRN,
-    COMBO_LENGTH
+const uint16_t PROGMEM test_combo1[] = {KC_R, KC_T, COMBO_END};
+const combo_t key_combos[COMBO_COUNT] PROGMEM = {
+    COMBO(test_combo1, KC_LPRN),
 };
-
-const uint16_t PROGMEM rt_lprn_combo[] = {KC_R, KC_T, COMBO_END};
-
-combo_t key_combos[COMBO_LENGTH] = {
-    [RT_LPRN] = COMBO(rt_lprn_combo, S(KC_9)),
-};
-#endif

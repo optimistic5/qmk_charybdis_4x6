@@ -30,6 +30,16 @@ After commit, github action will build archive with firmware for you.
 - Copy firmware to it
 - Done
 
+## How to compile locally
+
+```bash
+yay -S qmk
+qmk config user.keymap=optimistic5
+qmk setup -y
+cd ~/qmk_firmware && mkdir -p users && ln -sf ~/myrepo/github/qmk_charybdis_4x6 users/optimistic5
+qmk compile ~/qmk_firmware/users/optimistic5/keymap.json
+```
+
 ## Keymap
 
 ![Keymap](keymap.png)
