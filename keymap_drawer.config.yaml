@@ -1,3 +1,8 @@
 draw_config:
   # Render with dark keycaps to match the repo's original keymap image.
   dark_mode: true
+
+parse_config:
+  # Highlight every key that activates a layer (e.g. both LT(1,...) thumbs),
+  # not just the first one.
+  mark_alternate_layer_activators: true

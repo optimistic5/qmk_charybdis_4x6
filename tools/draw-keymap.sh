@@ -20,7 +20,7 @@ CONFIG="keymap_drawer.config.yaml"
 tmp="$(mktemp -d)"
 trap 'rm -rf "$tmp"' EXIT
 
-"$KEYMAP" parse -q "$KM" -o "$tmp/keymap.yaml"
+"$KEYMAP" -c "$CONFIG" parse -q "$KM" -o "$tmp/keymap.yaml"
 "$KEYMAP" -c "$CONFIG" draw -j "$INFO" -l LAYOUT "$tmp/keymap.yaml" -o "$tmp/keymap.svg"
 "$RSVG" --background-color '#2c2c2c' "$tmp/keymap.svg" -o keymap.png
 
