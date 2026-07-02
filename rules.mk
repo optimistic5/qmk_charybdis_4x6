@@ -1,5 +1,8 @@
 SRC +=  source.c
 
+# Splinky v3 is an RP2040-ce compatible controller on the elite-c footprint
+CONVERT_TO = rp2040_ce
+
 # RP2040-specific options
 ALLOW_WARNINGS = yes
 PICO_INTRINSICS_ENABLED = no # ATM Unsupported by ChibiOS.
