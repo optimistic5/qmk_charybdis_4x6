@@ -1,1 +1,7 @@
 draft
+
+# Build artifacts
+.build/
+*.uf2
+*.bin
+*.hex
