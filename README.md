@@ -112,3 +112,8 @@ It parses `keymap.json`, draws the layers with the dark theme in
 `keymap_drawer.config.yaml`, and writes `keymap.png`. The physical layout comes
 from `tools/charybdis_4x6.info.json` (a copy of the keyboard's QMK `info.json`),
 so no network or QMK checkout is needed.
+
+## Text editing on macOS
+
+See [TEXT-EDITING.md](TEXT-EDITING.md) for a cheat sheet mapping macOS
+cursor-movement, selection, and deletion shortcuts to these layers.
