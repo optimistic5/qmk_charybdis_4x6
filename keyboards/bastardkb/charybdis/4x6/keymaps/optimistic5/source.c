@@ -34,6 +34,29 @@ void matrix_scan_user(void) {
 #    endif // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #endif     // POINTING_DEVICE_ENABLE
 
+// Resolve the Enter thumb key as Alt as soon as another key is pressed, so
+// Alt+Backspace works without waiting out the tapping term. Home-row tap-holds
+// keep the default (safer) behaviour.
+bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
+    return keycode == LALT_T(KC_ENT);
+}
+
+// Top-row mods (W/O Ctrl, E/I Alt, R/U Cmd): tapping another key while one is
+// held gives the modifier; a rolling press (mod key released first) stays a
+// letter.
+bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LCTL_T(KC_W):
+        case LALT_T(KC_E):
+        case LGUI_T(KC_R):
+        case RGUI_T(KC_U):
+        case RALT_T(KC_I):
+        case RCTL_T(KC_O):
+            return true;
+    }
+    return false;
+}
+
 // Send s when pressed, send DRGSCRL (scroll mode for trackball) when hold
 // Put LT(0,KC_S) in keymap.json
 // Same for l

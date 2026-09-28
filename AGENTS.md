@@ -39,6 +39,12 @@ Layers live in `.../optimistic5/keymap.json`. Edit by hand or import/export via
 (hold `S`/`L` for trackball drag-scroll) lives in `source.c` via
 `process_record_user` on `LT(0, KC_S)` / `LT(0, KC_L)`.
 
+Top-row mod-taps: `W`/`O` Ctrl, `E`/`I` Alt, `R`/`U` Cmd (`LCTL_T(KC_W)` ...
+`RCTL_T(KC_O)`). Tap-hold behaviour is per key: `get_permissive_hold()` lists
+those six keys and `get_hold_on_other_key_press()` covers the Enter/Alt thumb.
+Both need their `*_PER_KEY` defines in `config.h`; if you rename a keycode,
+update the matching `case` in `source.c` too.
+
 After changing the keymap, regenerate `keymap.png` (see below).
 
 ### Regenerate keymap.png

@@ -71,7 +71,13 @@ BastardKB fork, builds this keymap, and uploads the `.uf2` as an artifact.
 Layers live in `keyboards/bastardkb/charybdis/4x6/keymaps/optimistic5/keymap.json`.
 You can edit it by hand, or import/export it via <https://config.qmk.fm/> (set
 the keyboard to `bastardkb/charybdis/4x6`). Custom behaviour (hold `S`/`L` for
-trackball drag-scroll) lives in `source.c`.
+trackball drag-scroll, per-key tap-hold tuning) lives in `source.c`.
+
+The top row doubles as modifiers when held: `W`/`O` Ctrl, `E`/`I` Alt,
+`R`/`U` Cmd (same layout as the MacBook kanata config). They use permissive
+hold: hold the letter and tap another key for the modifier, while rolling
+presses stay letters. For a chord whose letter is itself a mod key, use the
+other hand's copy (Cmd+W = hold `U`, tap `W`).
 
 ## How to flash firmware to keyboard
 
